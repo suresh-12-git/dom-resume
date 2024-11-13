@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   table,tr,td,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 70%;
+    padding: 20px;
+   }
+</style>
+<body>
+    <div id="first-div">
+
+    </div>
+    <div id="second-div">
+     
+    </div>
+
+    <table id="table1" class="tb">
+
+    </table>
+    <div id="third-div">  
+
+    </div>
+    <div id="fourth-div">
+
+    </div>
+    <script>
+
+        var div1=document.getElementById('first-div')
+        div1.style.fontSize="14px"
+        var h1=document.createElement("h1");
+        h1.textContent= "Name: Alakuntla Suresh";
+        var h2=document.createElement('h2');
+        h2.textContent="Email: asuresh61278@gmail.com"
+        var m=document.createElement('h2');
+        m.textContent="Mobile: 7036720578" 
+        var add=document.createElement('h2');
+        add.textContent='Address: Nalgonda'
+        var hr1=document.createElement('hr');
+         div1.append(h1,h2,m,add,hr1)
+
+
+         //second-div
+         var div2=document.getElementById('second-div');
+         div2.style.fontSize="14px";
+        
+         var h11=document.createElement("h1");
+         h11.textContent= "Career Objective";
+
+         var para=document.createElement('p');
+         para.style.fontSize="18px"
+         para.textContent="to be an efficacious software engineer in a progressive organization which enables me to fully utilize my skills, while making a significant and contribution to success of the organization."
+        
+
+         var head=document.createElement("h1")
+         head.textContent='Qualification'
+
+         div2.append(h11,para,head)
+
+//table 
+
+         var table1=document.getElementById('table1')
+        
+
+         var tr1=document.createElement('tr');
+
+         var th1=document.createElement("th");
+         th1.textContent="Qualification"
+         var th2=document.createElement("th");
+         th2.textContent="Name of the college"
+         var th3=document.createElement("th");
+         th3.textContent="Year of pass"
+         var th4=document.createElement("th");
+         th4.textContent="Percentage";
+
+        
+         tr1.append(th1,th2,th3,th4);
+
+
+
+         var tr2=document.createElement('tr');
+
+        var th12=document.createElement("td");
+th12.textContent="B.tech(EEE)"
+var th22=document.createElement("td");
+th22.textContent="Mahatma Gandhi University"
+var th23=document.createElement("td");
+th23.textContent="2021"
+var th24=document.createElement("td");
+th24.textContent="69.2%";
+
+
+tr2.append(th12,th22,th23,th24);
+
+var tr3=document.createElement('tr');
+
+var th123=document.createElement("td");
+th123.textContent="IPE (M.P.C)"
+var th223=document.createElement("td");
+th223.textContent="Nagarjuna Junior College"
+var th233=document.createElement("td");
+th233.textContent="2016"
+var th243=document.createElement("td");
+th243.textContent="80.4%";
+
+
+tr3.append(th123,th223,th233,th243);
+
+var tr4=document.createElement('tr');
+
+var th1234=document.createElement("td");
+th1234.textContent="S.S.C"
+var th2234=document.createElement("td");
+th2234.textContent="Alpha Public School"
+var th2334=document.createElement("td");
+th2334.textContent="2014"
+var th2434=document.createElement("td");
+th2434.textContent="78%";
+
+
+tr4.append(th1234,th2234,th2334,th2434);
+table1.append(tr1,tr2,tr3,tr4)
+        
+  
+//div3
+var div3=document.getElementById('third-div');
+var head2=document.createElement('h1');
+head2.textContent="Technical Skills"
+
+
+var ul=document.createElement('ul');
+ul.style.fontSize="18px"
+ul.style.lineHeight="28px"
+
+var li1=document.createElement('li');
+li1.textContent="Front-End: HTML5,CSS,JAVASCRIPT,BOOTSTRAP&REACT-JS"
+var li2=document.createElement('li');
+li2.textContent="Back-End: Pyhton&Node.js"
+var li3=document.createElement('li');
+li3.textContent="Data-Base: Sql"
+
+
+ul.append(li1,li2,li3)
+div3.append(head2,ul)      
+
+
+
+//div4
+
+var div4=document.getElementById('fourth-div');
+
+var head123=document.createElement('h1');
+head123.textContent="Declaration"
+var para2=document.createElement('p');
+para2.style.fontSize="18px"
+para2.textContent="I here by declare the above furnished information is true to the knowledge of my extent."
+    
+div4.append(head123,para2)
+    
+    </script>
+</body>
+</html>
